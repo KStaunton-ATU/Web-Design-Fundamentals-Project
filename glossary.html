@@ -1,16 +1,33 @@
-<!DOCTYPE html><!--Standard compliant. Tells browser we're using the lastest version of HTML -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--For mobile browsers-->
-    <meta name="description" content="Template Page"><!--Meta tags for search engine optimisation -->
-    <meta name="keywords" content="Sections, Article, Footer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Linux commands, file directories, and popular distributions with this comprehensive glossary for Linux beginners and enthusiasts.">
+    <meta name="keywords" content="Linux, Glossary, Linux Commands, File Directories, Linux Distributions, Ubuntu, Debian, Fedora, Arch, Linux Mint, Kali Linux">
     <title>Glossary</title>
-    <link rel="stylesheet" href="styles/style.css"><!--Links in a CSS file-->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico">
     <style>
-    </style><!--Internal CSS-->
+        table {
+            width: 100%; 
+            border-collapse: collapse; /* Removes double borders and "merges" cells together */
+            margin: 2rem 0; 
+        }
+        
+        th, td {
+            border: 1px solid #444; /* Adds borders to all cells */
+            padding: 0.5rem; 
+            text-align: left; 
+        }
+        
+        th {
+            font-size: 1.2em;
+            background-color: #2a2a2a; 
+            color: #fafafa; 
+        }        
+    </style>
 </head>
 
 <body>
@@ -28,19 +45,227 @@
             </ul>
         </nav>
     </header>
+    <aside class="internalLinks">
+        <h3>Jump to:</h3>
+        <ul>
+            <li><a href="#FileDirectories">Linux File Directories</a></li>
+            <li><a href="#Commands">Linux Commands</a></li>
+            <li><a href="#Distributions"> Popular Linux Distributions</a></li>
+        </ul>
+    </aside>
     <main>
         <section>
-            <h2>What is Linux?</h2>
-            <p>Linux is a robust, free, and open-source operating system that has become a cornerstone of modern technology. Renowned for its flexibility and security, Linux is used in a wide range of devices and platforms, from web servers and supercomputers to smartphones and home desktops. 
-               Unlike proprietary operating systems, Linux thrives on collaboration and is developed by a global community of enthusiasts and professionals who embrace open-source principles. This transparency allows users to study, modify, and distribute the software freely, fostering innovation and 
-               adaptability. One of Linux's key strengths is its variety of distributions, or “distros,” such as Ubuntu, Fedora, Debian, and Arch Linux. Each distro is tailored to specific needs, whether for beginner users, developers, or enterprise-level environments. Furthermore, Linux’s lightweight 
-               and efficient design make it a popular choice for systems requiring high performance and reliability. Linux also serves as a gateway to open-source software and a community-driven ecosystem where enthusiasts share knowledge, solve problems, and contribute to the ongoing growth of the 
-               platform. Whether you're a tech-savvy developer or simply curious about exploring alternatives, Linux empowers users to take control of their computing experience.<a href="https://en.wikipedia.org/wiki/Linux" style="color:rgb(101, 101, 252)"> Click here to read more...</a></p>           
-        </section>       
+            <h2>The Many Folders Of Linux!</h2>
+            <p>When using the Command Line, you will need to know the different directories available. Here is a breakdown of the directories available in most Linux distros!</p>
+            <table>
+                <caption id="FileDirectories" style="font-size: 1.6em;">Linux File Directories</caption>
+                <thead>
+                    <tr>
+                        <th>Directory</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/</td>
+                        <td>The root directory, the top-level directory of the Linux file system hierarchy.</td>
+                    </tr>
+                    <tr>
+                        <td>/home</td>
+                        <td>Contains personal directories for each user, where individual files, configurations, and data are stored.</td>
+                    </tr>
+                    <tr>
+                        <td>/etc</td>
+                        <td>Stores system-wide configuration files and scripts used for system setup and management.</td>
+                    </tr>
+                    <tr>
+                        <td>/var</td>
+                        <td>Holds variable files like logs (/var/log), cache, and temporary data that frequently changes during runtime.</td>
+                    </tr>
+                    <tr>
+                        <td>/usr</td>
+                        <td>Contains user application files and libraries, including shared resources for installed software.</td>
+                    </tr>
+                    <tr>
+                        <td>/bin</td>
+                        <td>Houses essential binaries (commands) required for the system to operate in single-user mode.</td>
+                    </tr>
+                    <tr>
+                        <td>/sbin</td>
+                        <td>Contains system binaries used for administrative tasks, like fsck, reboot, and ifconfig.</td>
+                    </tr>
+                    <tr>
+                        <td>/lib</td>
+                        <td>Stores essential shared libraries used by the binaries in /bin and /sbin.</td>
+                    </tr>
+                    <tr>
+                        <td>/tmp</td>
+                        <td>Temporary storage directory for files created by programs; data here is cleared upon system reboot.</td>
+                    </tr>
+                    <tr>
+                        <td>/opt</td>
+                        <td>Optional software directory for third-party applications and additional packages.</td>
+                    </tr>
+                    <tr>
+                        <td>/dev</td>
+                        <td>Contains device files that provide access to hardware such as hard drives, printers, and keyboards.</td>
+                    </tr>
+                    <tr>
+                        <td>/boot</td>
+                        <td>Holds files needed for the booting process, including the Linux kernel and initial ramdisk.</td>
+                    </tr>
+                    <tr>
+                        <td>/proc</td>
+                        <td>A virtual directory providing information about currently running processes and kernel parameters.</td>
+                    </tr>
+                    <tr>
+                        <td>/sys</td>
+                        <td>Provides detailed system information and exposes kernel objects for interaction.</td>
+                    </tr>
+                    <tr>
+                        <td>/media</td>
+                        <td>Used for automatically mounting removable devices like USB drives and CDs.</td>
+                    </tr>
+                    <tr>
+                        <td>/mnt</td>
+                        <td>A generic mount point for temporarily mounting filesystems.</td>
+                    </tr>
+                    <tr>
+                        <td>/root</td>
+                        <td>The home directory for the root (administrative) user.</td>
+                    </tr>
+                    <tr>
+                        <td>/run</td>
+                        <td>Stores system information and runtime data during the current boot session.</td>
+                    </tr>
+                    <tr>
+                        <td>/lost+found</td>
+                        <td>Contains recovered files after a filesystem check (used for troubleshooting).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+        <section>
+            <h2>Commanding The Console</h2>
+            <p>There are many useful commands when using the Command Line in Linux. Here are some useful commands to help you get the most out of your machine!</p>
+            <table>
+                <caption id="Commands" style="font-size: 1.6em;">Linux Commands</caption>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ls</td>
+                        <td>Lists files and directories in the current working directory.</td>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>Changes the current directory to the specified path.</td>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td>Prints the absolute path of the current working directory.</td>
+                    </tr>
+                    <tr>
+                        <td>cp</td>
+                        <td>Copies files or directories from one location to another.</td>
+                    </tr>
+                    <tr>
+                        <td>mv</td>
+                        <td>Moves (or renames) files and directories.</td>
+                    </tr>
+                    <tr>
+                        <td>rm</td>
+                        <td>Removes files or directories (use carefully—there's no undo!).</td>
+                    </tr>
+                    <tr>
+                        <td>mkdir</td>
+                        <td>Creates a new directory with the specified name.</td>
+                    </tr>
+                    <tr>
+                        <td>touch</td>
+                        <td>Creates an empty file or updates the timestamp of an existing file.</td>
+                    </tr>
+                    <tr>
+                        <td>cat</td>
+                        <td>Concatenates and displays the contents of files.</td>
+                    </tr>
+                    <tr>
+                        <td>nano</td>
+                        <td>Opens the Nano text editor to edit files directly in the terminal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>    
+        <section>
+            <h2>Distributed Solutions</h2>
+            <p>There are many different Linux distros available and it can be difficult to pick the right one to suit your needs. Here is a breakdown on some of the most popular distros and why you should use them!</p>
+            <table>
+                <caption id="Distributions" style="font-size: 1.6em;">Popular Linux Distributions</caption>
+                <thead>
+                    <tr>
+                        <th>Distribution</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ubuntu</td>
+                        <td>A user-friendly distro that's ideal for beginners, with extensive community support and a focus on ease of use.</td>
+                    </tr>
+                    <tr>
+                        <td>Debian</td>
+                        <td>A stable and versatile distro used as the foundation for many others, including Ubuntu.</td>
+                    </tr>
+                    <tr>
+                        <td>Fedora</td>
+                        <td>Focuses on innovation and includes the latest open-source technologies. Often chosen by developers.</td>
+                    </tr>
+                    <tr>
+                        <td>Arch Linux</td>
+                        <td>A lightweight and highly customizable distro for advanced users who prefer full control over their system.</td>
+                    </tr>
+                    <tr>
+                        <td>Linux Mint</td>
+                        <td>Based on Ubuntu/Debian, Mint is designed to be simple, elegant, and perfect for those switching from Windows.</td>
+                    </tr>
+                    <tr>
+                        <td>CentOS</td>
+                        <td>A free, enterprise-grade distribution based on Red Hat Enterprise Linux (RHEL), suitable for servers.</td>
+                    </tr>
+                    <tr>
+                        <td>Kali Linux</td>
+                        <td>A security-focused distro equipped with tools for penetration testing and ethical hacking.</td>
+                    </tr>
+                    <tr>
+                        <td>elementary OS</td>
+                        <td>An Ubuntu-based distro with a macOS-like user interface, prioritizing design and user experience.</td>
+                    </tr>
+                    <tr>
+                        <td>Manjaro</td>
+                        <td>A beginner-friendly spin on Arch Linux, combining simplicity with rolling-release updates.</td>
+                    </tr>
+                    <tr>
+                        <td>Zorin OS</td>
+                        <td>A distro designed to feel familiar to Windows and macOS users, making it a great choice for newcomers.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
-        <!--Groups content for the end of the page-->
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Linux For Dummies. All rights reserved.</p>
     </footer>
 </body>
 
