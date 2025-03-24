@@ -1,20 +1,56 @@
-<!DOCTYPE html><!--Standard compliant. Tells browser we're using the lastest version of HTML -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--For mobile browsers-->
-    <meta name="description" content="Template Page"><!--Meta tags for search engine optimisation -->
-    <meta name="keywords" content="Sections, Article, Footer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us through our contact form. Share your thoughts, questions, or feedback about Linux and open-source software.">
+    <meta name="keywords" content="Contact Us, Linux, Support, Feedback, Open Source, Questions">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css"><!--Links in a CSS file-->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico">
     <style>
         .required{
     font-weight:bold;
     color:red;
 }
-    </style><!--Internal CSS-->
+form {
+    max-width: 50rem; /*800 pixels at default*/
+    margin: 2rem auto;/*Horizontally centers the form*/
+    padding: 1rem;
+    color:#FAF9F6;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fafafa;
+}
+
+form button {
+    background-color: #faf9f6;
+    color: #2a2a2a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;/*Change from arrow to pointing hand*/
+}
+
+form button:hover {
+    background-color: #f5f5f5;
+    color: #1c1c1c;
+}
+    </style>
 </head>
 
 <body>
@@ -32,18 +68,10 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>What is Linux?</h2>
-            <p>Linux is a robust, free, and open-source operating system that has become a cornerstone of modern technology. Renowned for its flexibility and security, Linux is used in a wide range of devices and platforms, from web servers and supercomputers to smartphones and home desktops. 
-               Unlike proprietary operating systems, Linux thrives on collaboration and is developed by a global community of enthusiasts and professionals who embrace open-source principles. This transparency allows users to study, modify, and distribute the software freely, fostering innovation and 
-               adaptability. One of Linux's key strengths is its variety of distributions, or “distros,” such as Ubuntu, Fedora, Debian, and Arch Linux. Each distro is tailored to specific needs, whether for beginner users, developers, or enterprise-level environments. Furthermore, Linux’s lightweight 
-               and efficient design make it a popular choice for systems requiring high performance and reliability. Linux also serves as a gateway to open-source software and a community-driven ecosystem where enthusiasts share knowledge, solve problems, and contribute to the ongoing growth of the 
-               platform. Whether you're a tech-savvy developer or simply curious about exploring alternatives, Linux empowers users to take control of their computing experience.<a href="https://en.wikipedia.org/wiki/Linux" style="color:rgb(101, 101, 252)"> Click here to read more...</a></p>           
-        </section>    
+    <main>       
         <section id="contact">
             <h2>Contact Us</h2>
-            <form action="bogus.php" method="post">
+            <form action="contact.html" method="get">
                 <label for="fullname">Name:<span class="required">*</span></label>
                 <input type="text" id="fullname" name="fullname" autofocus required placeholder="Enter your name here...">
                 
@@ -51,7 +79,7 @@
                 <input type="email" id="email" name="email" required placeholder="Enter your email here...">
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..."></textarea>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..." style="height: 20rem;"></textarea>
                 
                 <button type="submit">Send Message</button>
             </form>
@@ -59,8 +87,15 @@
            
     </main>
     <footer>
-        <!--Groups content for the end of the page-->
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Linux For Dummies. All rights reserved.</p>
     </footer>
 </body>
 
