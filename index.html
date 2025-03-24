@@ -1,16 +1,31 @@
-<!DOCTYPE html><!--Standard compliant. Tells browser we're using the lastest version of HTML -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--For mobile browsers-->
-    <meta name="description" content="Template Page"><!--Meta tags for search engine optimisation -->
-    <meta name="keywords" content="Sections, Article, Footer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Linux, its features, benefits, and distributions with our beginner-friendly guide. Explore open-source software, FAQs, and the Linux Foundation.">
+    <meta name="keywords" content="Linux, open source, features, distributions, beginner guide, Linux Foundation, FAQ, Ubuntu, Fedora, software">
     <title>Home</title>
-    <link rel="stylesheet" href="styles/style.css"><!--Links in a CSS file-->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico">
     <style>
-    </style><!--Internal CSS-->
+        .container {
+                position: relative; 
+                width: 100%; 
+                padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+                overflow: hidden; 
+            }
+            
+        .container iframe {
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%; 
+                height: 100%; 
+                border: none;
+            }
+    </style>
 </head>
 
 <body>
@@ -28,19 +43,110 @@
             </ul>
         </nav>
     </header>
+    <aside class="internalLinks">
+        <h3>Jump to:</h3>
+        <ul>
+            <li><a href="#WhatIsLinux">What is linux?</a></li>
+            <li><a href="#Features">Features Of Linux</a></li>
+            <li><a href="#WhyUseLinux">Why Should You Use Linux?</a></li>
+            <li><a href="#video">A Useful Video For Beginners</a></li>
+            <li><a href="#LinuxFoundation">The Linux Foundation</a></li>
+        </ul>
+    </aside>
     <main>
+        <section id="summary">
+            <h2>Frequently Asked Questions</h2>
+        
+            <details>
+                <summary>What is Linux?</summary>
+                <p>Linux is an open-source operating system used for a wide range of devices, including servers, desktops, and smartphones.</p>
+            </details>
+        
+            <details>
+                <summary>Why use Linux?</summary>
+                <p>Linux is free, secure, and customizable. It also supports a variety of hardware and is perfect for developers and tech enthusiasts.</p>
+            </details>
+        
+            <details>
+                <summary>What are Linux distributions?</summary>
+                <p>Distributions, or distros, are variations of Linux, like Ubuntu, Fedora, and Arch Linux, tailored for different user needs.</p>
+            </details>
+        </section>
         <section>
-            <h2>What is Linux?</h2>
+            <h2 id="WhatIsLinux">What is Linux?</h2>
             <p>Linux is a robust, free, and open-source operating system that has become a cornerstone of modern technology. Renowned for its flexibility and security, Linux is used in a wide range of devices and platforms, from web servers and supercomputers to smartphones and home desktops. 
                Unlike proprietary operating systems, Linux thrives on collaboration and is developed by a global community of enthusiasts and professionals who embrace open-source principles. This transparency allows users to study, modify, and distribute the software freely, fostering innovation and 
                adaptability. One of Linux's key strengths is its variety of distributions, or “distros,” such as Ubuntu, Fedora, Debian, and Arch Linux. Each distro is tailored to specific needs, whether for beginner users, developers, or enterprise-level environments. Furthermore, Linux’s lightweight 
                and efficient design make it a popular choice for systems requiring high performance and reliability. Linux also serves as a gateway to open-source software and a community-driven ecosystem where enthusiasts share knowledge, solve problems, and contribute to the ongoing growth of the 
-               platform. Whether you're a tech-savvy developer or simply curious about exploring alternatives, Linux empowers users to take control of their computing experience.<a href="https://en.wikipedia.org/wiki/Linux" style="color:rgb(101, 101, 252)"> Click here to read more...</a></p>           
-        </section>       
+               platform. Whether you're a tech-savvy developer or simply curious about exploring alternatives, Linux empowers users to take control of their computing experience.<a href="https://en.wikipedia.org/wiki/Linux" style="color:#6565fc;"> Click here to read more...</a></p>           
+        </section>  
+        <section>
+            <h2 id="Features">Features of Linux</h2>
+            <ul>
+                <li><b>Open Source:</b> Linux's source code is freely available for anyone to view, modify, and distribute. No licensing fees, no hidden costs—just pure flexibility.</li>
+                <li><b>Security:</b> Linux is renowned for its robust security features, including permissions, firewalls, and encryption. It’s robust permission system and active community make it one of the most secure operating systems available.</li>
+                <li><b>Stability:</b> Whether you’re running a personal project or managing servers, Linux doesn’t crash randomly. It’s built to last and works flawlessly even on older hardware.</li>
+                <li><b>Portability:</b> Runs on a wide variety of hardware, from PCs to supercomputers</li>
+                <li><b>Customizability:</b> Users can tailor the system to their preferences, from the kernel to the desktop environment.</li>
+                <li><b>Variety of Distributions:</b> Options like Ubuntu, Fedora, and Arch Linux cater to diverse user needs.</li>
+                <li><b>Command-Line Interface (CLI):</b> The powerful Linux terminal allows advanced control and scripting.</li>
+                <li><b>Efficient and Lightweight:</b> Linux runs smoothly on virtually any device, whether it’s an old laptop or a high-performance server.</li>
+                <li><b>Software Management:</b> Package managers like  and  streamline the installation and updating of applications.</li>
+                <li><b>Community Support:</b> Backed by a global community for troubleshooting, updates, and innovation.</li>
+            </ul>
+        </section>     
+        <section>
+            <h2 id="WhyUseLinux">Why should you use Linux?</h2>
+            <ol>
+                <li><b>No Forced Updates:</b> Unlike other operating systems, Linux gives you full control over when and how updates happen—no annoying pop-ups or sudden restarts.</li>
+                <li><b>Privacy by Design:</b> Linux doesn't collect or share personal data without your consent, making it an excellent choice for privacy-conscious users.</li>
+                <li><b>Driver Availability:</b> Unlike some other systems, Linux often includes built-in support for a wide range of hardware drivers right out of the box.</li>
+                <li><b>Learning Opportunity:</b> Using Linux introduces you to concepts like the command line, file system hierarchy, and shell scripting, helping you deepen your tech skills.</li>
+                <li><b>Great for Developers:</b> Many programming languages and tools are natively supported, and Linux’s package managers simplify setting up development environments.</li>
+                <li><b>Strong Performance with Virtualization:</b> Linux excels at running virtual machines and containers like Docker, making it a top pick for system administrators and developers.</li>
+                <li><b>Compatibility with Old Hardware:</b> Linux can breathe new life into outdated computers with lightweight distros tailored for low-spec systems.</li>
+                <li><b>Reliable Uptime:</b> Linux systems are known for their exceptional uptime, making them ideal for running critical servers and services.</li>
+                <li><b>Massive Documentation:</b> Whatever issue you encounter, there’s almost always a guide, forum post, or tutorial available to help you out.</li>
+                <li><b>Eco-Friendly Computing:</b> Many Linux distributions are lightweight and efficient, leading to reduced energy consumption and carbon footprint.</li>
+                <li><b>No Vendor Lock-In:</b> Linux doesn’t tie you to specific vendors or ecosystems, giving you the freedom to switch hardware and software as you please.</li>
+            </ol>
+        </section>
+        <section id="video">
+            <h2>A Useful Video For Beginners</h2>
+            <p>If you want to learn everything there is about Linux, then try this useful video!</p>
+            <div class="container">
+                <iframe src="https://www.youtube.com/embed/sWbUDq4S6Y8" title="Introduction to Linux – Full Course for Beginners"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h2 id="LinuxFoundation">The Linux Foundation</h2>
+            <p>The Linux Foundation is a hub for all kinds of projects. You can find their office at:</p>
+            <ul style="list-style: none;">
+                <li>548 Market St</li>
+                <li>San Francisco</li>
+                <li>California</li>
+                <li>94104</li>
+                <li>United States</li>
+            </ul>
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0029215952723!2d-122.40092869999998!3d37.7899713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085872afc21754f%3A0x955ffe54d50ef1cc!2sLinux%20Foundation!5e0!3m2!1sen!2sie!4v1742749653401!5m2!1sen!2sie"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
-        <!--Groups content for the end of the page-->
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Linux For Dummies. All rights reserved.</p>
     </footer>
 </body>
 
