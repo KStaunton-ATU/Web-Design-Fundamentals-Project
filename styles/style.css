@@ -19,7 +19,6 @@ body {
 header {
     background-color: #1f1f1f; /* Slightly lighter black for the header */
     padding-top: 1rem;/*Broswer defined font size, typically 16px. For scalability*/
-    /*padding-bottom: 1rem;*/
     text-align: center;
 }
 
@@ -40,13 +39,13 @@ header h4{
 }
 
 nav{
-    background-color: #2a2a2a;/*contrasts*/   
+    background-color: #2a2a2a;   
     padding: 10px;
-    margin-top: 4rem;/*prevent logo overlapping with nav bar*/
+    margin-top: 2rem;/*prevent logo overlapping with nav bar*/
 }
 
 nav ul {
-    list-style: none;/*removes bullet points*/
+    list-style: none;
     padding: 0;
     margin:0;
     font-size: 1.3em;
@@ -62,8 +61,6 @@ nav ul li {
     margin-right: 1rem;
     padding:10px;
     border-radius: 10px;
-    /*margin-top: 1rem;
-    margin-bottom: 1rem;*/
 }
 
 #active{
@@ -95,37 +92,27 @@ h1, h2, h3, h4 {
     text-align: left;
 }
 
-
-
-
-
-
 footer {
     background-color: #1f1f1f;/*matching the header color*/
-    padding-top: 1rem;/*Broswer defined font size, typically 16px. For scalability*/
+    padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
     
-    /*position: absolute*/
+    position: relative;
     bottom:0;/*Ensures footer is at bottom of screen*/
     width: 100%;
 }
 
 footer p{
     text-align: center;
-    color: #b0b0b0; /* Subtle gray for the footer text */
+    color: #b0b0b0; 
 }
-
-
-
-
 
 section {
     margin: 2rem auto; /*Horizontally centers the section*/
     padding: 1rem;
-    /*max-width: 800px;*/
     max-width: 100rem;/*1600 pixels at default*/
-    background-color: #1c1c1c; /* Not too black */
+    background-color: #1c1c1c; 
     border-radius: 10px;
 
 }
@@ -136,5 +123,54 @@ section h2 {
     color: #ffffff;
 }
 
+article {
+    background-color: #282828; /*default incase images fail to load*/
+    border: 2px solid #f5f5f5; 
+    border-radius: 15px; 
+    padding: 1.5rem; 
+    margin: 2rem auto; 
+    max-width: 80rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    line-height: 1.8; 
+    color: #f5f5f5; 
+}
 
+article h2 {
+    color: #f5f5f5; 
+    font-size: 1.8rem;
+    border-bottom: 2px solid #f5f5f5; 
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center; 
+}
 
+article p {
+    font-size: 1.2rem;
+    column-count: 3; 
+    column-gap: 1.5rem; 
+    text-align: justify; 
+    column-rule: 1px solid #f5f5f5;
+}
+
+article img {
+    display: block; 
+    height: 15rem; 
+    margin: 1rem auto; 
+    border-radius: 10px; 
+}
+
+.internalLinks {
+    float: left; 
+    width: 20rem; /*Does not overlap with section*/
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem; 
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.internalLinks a{
+    color: #6565fc;
+}
